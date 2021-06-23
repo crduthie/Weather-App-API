@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Weather</title>
+<link rel="stylesheet" href="font/Rimouski.css">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+<div class="wrapper">
+	
+	<div class="overlay"></div>
+	
+		<div class="container">
+	
+			<input type="text" autocomplete="off" class="search-box" placeholder="Search for a city..." />
+
+			<div class="notifications"></div>
+
+			<div class="weather-container">
+				
+				<div class="location"><p>-</p></div>
+
+				<div class="date"><p>-</p></div>
+
+				<div class="weather-icon"><img src="icons/unknown.png" alt="Unknown"></div>
+
+				<div class="temperature-value"><p>- ° <span>C</span></p></div>
+
+				<div class="temperature-description"><p> - </p></div>
+
+				<i class="glass" onclick="setQuery"></i>
+				
+					<div class="forecast-overall-container">
+
+						<div class="forecast-container">
+
+							<div class="weather-icon-one"><img src="icons/unknown.png" alt="Unknown"></div>
+
+							<div class="temperature-value-forecast-one"><p>- ° <span>C</span></p></div>
+
+							<div class="temperature-description-forecast-one"><p> - </p></div>
+
+							<div class="days-one"><p>-</p></div>
+
+						</div>
+
+						<div class="forecast-container">
+
+							<div class="weather-icon-two"><img src="icons/unknown.png" alt="Unknown"></div>
+
+							<div class="temperature-value-forecast-two"><p>- ° <span>C</span></p></div>
+
+							<div class="temperature-description-forecast-two"><p> - </p></div>
+
+							<div class="days-two"><p>-</p></div>
+
+						</div>
+
+						<div class="forecast-container">
+
+							<div class="weather-icon-three"><img src="icons/unknown.png" alt="Unknown"></div>
+
+							<div class="temperature-value-forecast-three"><p>- ° <span>C</span></p></div>
+
+							<div class="temperature-description-forecast-three"><p> - </p></div>
+
+							<div class="days-three"><p>-</p></div>
+
+						</div>
+
+						<div class="forecast-container">
+
+							<div class="weather-icon-four"><img src="icons/unknown.png" alt="Unknown"></div>
+
+							<div class="temperature-value-forecast-four"><p>- ° <span>C</span></p></div>
+
+							<div class="temperature-description-forecast-four"><p> - </p></div>
+
+							<div class="days-four"><p>-</p></div>
+
+						</div>
+
+						<div class="forecast-container">
+
+							<div class="weather-icon-five"><img src="icons/unknown.png" alt="Unknown"></div>
+
+							<div class="temperature-value-forecast-five"><p>- ° <span>C</span></p></div>
+
+							<div class="temperature-description-forecast-five"><p> - </p></div>
+
+							<div class="days-five"><p>-</p></div>
+
+						</div>
+						
+					</div>
+
+			</div>
+			
+		</div>
+	
+</div>
+  
+<script src="js/main.js"></script>
+
+</body>
+</html>
