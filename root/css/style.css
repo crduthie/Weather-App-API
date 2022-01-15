@@ -6,7 +6,6 @@ body{
     margin: 0;
 	padding: 0;
 }
-
 .wrapper{
     width: 100%;
 	height: 100vh;
@@ -22,11 +21,22 @@ body{
 	-o-background-size: cover;
 	background-size: cover;
 	background-position: center;
-	filter: blur(10px);
-    -webkit-filter: blur(10px);
-    -moz-filter: blur(10px);
-    -o-filter: blur(10px);
-    -ms-filter: blur(10px);
+	filter: blur(3px);
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    -ms-filter: blur(3px);
+}
+
+.filter-overlay{
+	width:100vw;
+	height: 100vh;
+	background: rgba(189,189,189,1.00);
+	opacity: 0.5;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 2;
 }
 
 .container{
@@ -34,6 +44,7 @@ body{
 	position: absolute;
 	left: 0;
 	top: 0;
+	z-index: 3;
 }
 
 .notification{
@@ -66,6 +77,10 @@ body{
     margin: 0 auto;
 }
 
+.center{
+	text-align: center;
+}
+
 .temperature-value{
     width: 300px;
     height:60px;
@@ -90,26 +105,17 @@ body{
     font-size: 0.5em;
 }
 
-.temperature-description{
-    
-}
-
 .temperature-description p{
     padding: 8px;
     margin-bottom: 4%;
-    color: black;
+    color: #343434;
     text-align: center;
     font-size: 1.2em;
-}
-
-.location{
-    
 }
 
 .location p{
     margin: 0;
     padding: 0;
-    color: #293251;
     text-align: center;
     font-size: 2.5vw;
 }
@@ -119,7 +125,7 @@ body{
 }
 
 .date p{
-    color: #293251;
+    color: #343434;
     text-align: center;
     font-size: 1em;
 }
@@ -132,6 +138,13 @@ body{
 
 .forecast-container{
 	float: left;
+	margin-right: 1%;
+}
+
+.weather-forecast-icons{
+	margin-left: 7.5%;
+    width: 85%;
+    height: auto;
 }
 
 .search-box{
@@ -153,8 +166,8 @@ body{
 }
 
 i{
-  	left: 58%;
-    bottom: 89%;
+  	left: 57.4%;
+    bottom: 88.6%;
     color: #8233C5;
 }
 
@@ -183,4 +196,48 @@ i{
 
 .glass:hover{
 	cursor: pointer;
+}
+
+.weather-icon-one{
+	width: 100%;
+    height: 12vh;
+}
+
+.weather-icon-two{
+	width: 100%;
+    height: 12vh;
+}
+
+.weather-icon-three{
+	width: 100%;
+    height: 12vh;
+}
+
+.weather-icon-four{
+	width: 100%;
+    height: 12vh;
+}
+
+.weather-icon-five{
+	width: 100%;
+    height: 12vh;
+}
+
+.temperature-value-forecast-styling{
+	font-size: 1.4vw;
+}
+
+.forecast-container p{
+	margin: 5% 0 5% 0;
+}
+
+.temperature-description-forecast-styling{
+	font-size: 1vw;
+	color: #343434;
+}
+
+.days-styling{
+	font-style: italic;
+	font-size: 0.9vw;
+	color: #343434;
 }
